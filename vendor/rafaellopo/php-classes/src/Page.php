@@ -12,7 +12,7 @@ class Page
 	private $defaults = [
 		"header"=>true,
 		"footer"=>true,
-		"data"=> []
+		"data"=>[]
 	];
 	
 	public function __construct($opts = array(), $tpl_dir = "/views/")
@@ -39,7 +39,7 @@ class Page
 	{
 		foreach ($data as $key => $value) 
     	{
-    		$this->tpl->assign($Key, $value);
+    		$this->tpl->assign($key, $value);
    		}
 
 	}
